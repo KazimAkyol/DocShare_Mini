@@ -9,12 +9,10 @@ export default function Home() {
                     "url('https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=1600&q=80')",
             }}
         >
-            {/* Overlay (arka planın üstüne hafif karartma) */}
-            <div className="absolute inset-0 bg-black bg-opacity-30"></div>
 
             {/* Main */}
-            <main className="flex-1 flex items-center justify-center px-4 py-20 relative z-10 mt-16">
-                <div className="max-w-4xl mx-auto text-center space-y-8 text-white drop-shadow">
+             <main className="min-h-screen flex items-center justify-center bg-gray-100 dark:bg-gray-900 px-4">
+            <div className="max-w-lg w-full bg-white dark:bg-gray-800 p-8 rounded-lg shadow-md">
                     <div className="space-y-4">
                         <h1 className="text-5xl md:text-6xl font-bold">
                             Dokumente{" "}
@@ -57,6 +55,3 @@ export default function Home() {
         </div>
     );
 }
-
-
-// npx nodemon --exec "ts-node --files --transpile-only" src/server.ts

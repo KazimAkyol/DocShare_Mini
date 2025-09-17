@@ -33,3 +33,5 @@ export default function Navbar() {
         </nav>
     );
 }
+
+// npx nodemon --exec "ts-node --files --transpile-only" src/server.ts

@@ -23,12 +23,14 @@ export default function Register() {
                 placeholder="Username"
                 className="border p-2 w-full"
             />
+            <br />
             <input
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Email"
                 className="border p-2 w-full"
             />
+            <br />
             <input
                 type="password"
                 value={password}
@@ -36,6 +38,7 @@ export default function Register() {
                 placeholder="Password"
                 className="border p-2 w-full"
             />
+            <br />
             <button
                 className="bg-green-600 text-white px-4 py-2">
                 Register
