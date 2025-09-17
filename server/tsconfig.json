@@ -1,19 +1,30 @@
 {
     "compilerOptions": {
-        "target": "ES2020", // Modern Node uyumlu JS çıktısı
-        "module": "commonjs", // Node.js için CommonJS
-        "rootDir": "./src", // TS kaynak klasörü
-        "outDir": "./dist", // Derlenmiş dosyalar
-        "esModuleInterop": true, // import * as express vs sorun çıkmasın
-        "forceConsistentCasingInFileNames": true,
+        "target": "ES2020",
+        "module": "CommonJS",
+        "lib": [
+            "ES2020"
+        ],
+        "outDir": "./dist",
+        "rootDir": "./src",
         "strict": true,
-        "skipLibCheck": true
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node",
+        "resolveJsonModule": true,
+        "baseUrl": "./",
+        "paths": {
+            "*": [
+                "node_modules/*"
+            ]
+        }
     },
     "include": [
-        "src"
-    ], // sadece src klasörü derlensin
+        "src/**/*"
+    ],
     "exclude": [
         "node_modules",
         "dist"
-    ] // node_modules ve dist’i hariç tut
+    ]
 }
